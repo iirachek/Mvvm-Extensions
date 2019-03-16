@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>5b6bfb9a-138e-4782-af31-584b7745b1c4</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NuProjPath Condition=" '$(NuProjPath)' == '' ">$(MSBuildExtensionsPath)\NuProj\</NuProjPath>
+  </PropertyGroup>
+  <Import Project="$(NuProjPath)\NuProj.props" Condition="Exists('$(NuProjPath)\NuProj.props')" />
+  <PropertyGroup Label="Configuration">
+    <Id>MvvmExtentions</Id>
+    <Version>1.2.0</Version>
+    <Title>Mvvm Extentions</Title>
+    <Authors>Illia Irachek</Authors>
+    <Owners>Illia Irachek</Owners>
+    <Summary>Some useful classes for WPF applications that utilize MVVM pattern </Summary>
+    <Description>Some useful classes for WPF applications that utilize MVVM pattern </Description>
+    <ReleaseNotes>
+    </ReleaseNotes>
+    <ProjectUrl>https://github.com/iirachek/Mvvm-Extentions</ProjectUrl>
+    <LicenseUrl>https://github.com/iirachek/Mvvm-Extentions/blob/master/LICENSE</LicenseUrl>
+    <Copyright>Copyright © Illia Irachek. All rights reserved.</Copyright>
+    <Tags>wpf mvvm commands viewmodel</Tags>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MvvmExtentions\MvvmExtentions.csproj" />
+  </ItemGroup>
+  <Import Project="$(NuProjPath)\NuProj.targets" />
+</Project>
