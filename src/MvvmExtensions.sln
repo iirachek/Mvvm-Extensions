@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nuget", "Nuget", "{4C531287
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvmExtensions", "Mvvm-Extensions\MvvmExtensions.csproj", "{31C043A4-7D7B-42CE-81DA-562A2D742026}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvmExtensions.Samples", "MvvmExtensions.Samples\MvvmExtensions.Samples.csproj", "{E3D40F5E-3053-467E-A323-A45D11A6C460}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,18 @@ Global
 		{31C043A4-7D7B-42CE-81DA-562A2D742026}.Relise x64|Any CPU.Build.0 = Relise x64|Any CPU
 		{31C043A4-7D7B-42CE-81DA-562A2D742026}.Relise x64|x64.ActiveCfg = Relise x64|x64
 		{31C043A4-7D7B-42CE-81DA-562A2D742026}.Relise x64|x64.Build.0 = Relise x64|x64
+		{E3D40F5E-3053-467E-A323-A45D11A6C460}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3D40F5E-3053-467E-A323-A45D11A6C460}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3D40F5E-3053-467E-A323-A45D11A6C460}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E3D40F5E-3053-467E-A323-A45D11A6C460}.Debug|x64.Build.0 = Debug|Any CPU
+		{E3D40F5E-3053-467E-A323-A45D11A6C460}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3D40F5E-3053-467E-A323-A45D11A6C460}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3D40F5E-3053-467E-A323-A45D11A6C460}.Release|x64.ActiveCfg = Release|Any CPU
+		{E3D40F5E-3053-467E-A323-A45D11A6C460}.Release|x64.Build.0 = Release|Any CPU
+		{E3D40F5E-3053-467E-A323-A45D11A6C460}.Relise x64|Any CPU.ActiveCfg = Release|Any CPU
+		{E3D40F5E-3053-467E-A323-A45D11A6C460}.Relise x64|Any CPU.Build.0 = Release|Any CPU
+		{E3D40F5E-3053-467E-A323-A45D11A6C460}.Relise x64|x64.ActiveCfg = Release|Any CPU
+		{E3D40F5E-3053-467E-A323-A45D11A6C460}.Relise x64|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
