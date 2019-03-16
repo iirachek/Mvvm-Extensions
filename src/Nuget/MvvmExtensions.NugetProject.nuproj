@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="MvvmExtensions.csproj" />
+    <ProjectReference Include="..\Mvvm-Extensions\MvvmExtensions.csproj" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>5b6bfb9a-138e-4782-af31-584b7745b1c4</ProjectGuid>
