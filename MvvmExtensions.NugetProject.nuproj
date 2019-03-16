@@ -10,6 +10,9 @@
       <Platform>AnyCPU</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="MvvmExtensions.csproj" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>5b6bfb9a-138e-4782-af31-584b7745b1c4</ProjectGuid>
   </PropertyGroup>
@@ -32,8 +35,5 @@
     <Copyright>Copyright © Illia Irachek. All rights reserved.</Copyright>
     <Tags>wpf mvvm commands viewmodel</Tags>
   </PropertyGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\MvvmExtentions\MvvmExtentions.csproj" />
-  </ItemGroup>
   <Import Project="$(NuProjPath)\NuProj.targets" />
 </Project>

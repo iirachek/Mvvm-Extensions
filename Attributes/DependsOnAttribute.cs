@@ -10,15 +10,23 @@ namespace MvvmExtensions.Attributes
     /// </summary>
     public sealed class DependsOnAttribute : Attribute
     {
-        /// <param name="dp">Names of properties that are dependencies for current property</param>
-        public DependsOnAttribute(params string[] dp)
+        /// <summary>
+        /// Instantiates a new instance of the <see cref="DependsOnAttribute"/> class
+        /// </summary>
+        /// <param name="dependencies">Names of properties that are dependencies for current property</param>
+        public DependsOnAttribute(params string[] dependencies)
         {
-            Properties = dp;
+            Dependencies = dependencies;
+
+            // Input parameter might be null, but for consumers it would be 
+            // better to return an empty array instead of null
+            if (Dependencies == null)
+                Dependencies = new string[0];
         }
 
         /// <summary>
         /// Names of properties that are dependencies for current property
         /// </summary>
-        public string[] Properties { get; }
+        public string[] Dependencies { get; }
     }
 }
