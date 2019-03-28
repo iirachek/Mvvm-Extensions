@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FF286327-C783-4F7A-AB73-9BCBAD0D4460}") = "MvvmExtensions.NugetProject", "Nuget\MvvmExtensions.NugetProject.nuproj", "{5B6BFB9A-138E-4782-AF31-584B7745B1C4}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nuget", "Nuget", "{4C531287-F7A5-4B3F-B457-23ED834904BA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvmExtensions", "Mvvm-Extensions\MvvmExtensions.csproj", "{31C043A4-7D7B-42CE-81DA-562A2D742026}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvmExtensions.Samples", "MvvmExtensions.Samples\MvvmExtensions.Samples.csproj", "{E3D40F5E-3053-467E-A323-A45D11A6C460}"
+EndProject
+Project("{FF286327-C783-4F7A-AB73-9BCBAD0D4460}") = "MvvmExtensions", "Nuget\MvvmExtensions.nuproj", "{5B6BFB9A-138E-4782-AF31-584B7745B1C4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,18 +21,6 @@ Global
 		Relise x64|x64 = Relise x64|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5B6BFB9A-138E-4782-AF31-584B7745B1C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5B6BFB9A-138E-4782-AF31-584B7745B1C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5B6BFB9A-138E-4782-AF31-584B7745B1C4}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{5B6BFB9A-138E-4782-AF31-584B7745B1C4}.Debug|x64.Build.0 = Debug|Any CPU
-		{5B6BFB9A-138E-4782-AF31-584B7745B1C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5B6BFB9A-138E-4782-AF31-584B7745B1C4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5B6BFB9A-138E-4782-AF31-584B7745B1C4}.Release|x64.ActiveCfg = Release|Any CPU
-		{5B6BFB9A-138E-4782-AF31-584B7745B1C4}.Release|x64.Build.0 = Release|Any CPU
-		{5B6BFB9A-138E-4782-AF31-584B7745B1C4}.Relise x64|Any CPU.ActiveCfg = Release|Any CPU
-		{5B6BFB9A-138E-4782-AF31-584B7745B1C4}.Relise x64|Any CPU.Build.0 = Release|Any CPU
-		{5B6BFB9A-138E-4782-AF31-584B7745B1C4}.Relise x64|x64.ActiveCfg = Release|Any CPU
-		{5B6BFB9A-138E-4782-AF31-584B7745B1C4}.Relise x64|x64.Build.0 = Release|Any CPU
 		{31C043A4-7D7B-42CE-81DA-562A2D742026}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{31C043A4-7D7B-42CE-81DA-562A2D742026}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31C043A4-7D7B-42CE-81DA-562A2D742026}.Debug|x64.ActiveCfg = Debug|x64
@@ -57,6 +45,18 @@ Global
 		{E3D40F5E-3053-467E-A323-A45D11A6C460}.Relise x64|Any CPU.Build.0 = Release|Any CPU
 		{E3D40F5E-3053-467E-A323-A45D11A6C460}.Relise x64|x64.ActiveCfg = Release|Any CPU
 		{E3D40F5E-3053-467E-A323-A45D11A6C460}.Relise x64|x64.Build.0 = Release|Any CPU
+		{5B6BFB9A-138E-4782-AF31-584B7745B1C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B6BFB9A-138E-4782-AF31-584B7745B1C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B6BFB9A-138E-4782-AF31-584B7745B1C4}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5B6BFB9A-138E-4782-AF31-584B7745B1C4}.Debug|x64.Build.0 = Debug|Any CPU
+		{5B6BFB9A-138E-4782-AF31-584B7745B1C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B6BFB9A-138E-4782-AF31-584B7745B1C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B6BFB9A-138E-4782-AF31-584B7745B1C4}.Release|x64.ActiveCfg = Release|Any CPU
+		{5B6BFB9A-138E-4782-AF31-584B7745B1C4}.Release|x64.Build.0 = Release|Any CPU
+		{5B6BFB9A-138E-4782-AF31-584B7745B1C4}.Relise x64|Any CPU.ActiveCfg = Release|Any CPU
+		{5B6BFB9A-138E-4782-AF31-584B7745B1C4}.Relise x64|Any CPU.Build.0 = Release|Any CPU
+		{5B6BFB9A-138E-4782-AF31-584B7745B1C4}.Relise x64|x64.ActiveCfg = Release|Any CPU
+		{5B6BFB9A-138E-4782-AF31-584B7745B1C4}.Relise x64|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

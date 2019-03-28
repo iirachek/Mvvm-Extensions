@@ -21,19 +21,18 @@
   </PropertyGroup>
   <Import Project="$(NuProjPath)\NuProj.props" Condition="Exists('$(NuProjPath)\NuProj.props')" />
   <PropertyGroup Label="Configuration">
-    <Id>MvvmExtentions</Id>
-    <Version>1.2.0</Version>
+    <Id>SimpleMvvmExtensions</Id>
+    <Version>1.2.1</Version>
     <Title>Mvvm Extentions</Title>
     <Authors>Illia Irachek</Authors>
     <Owners>Illia Irachek</Owners>
-    <Summary>Some useful classes for WPF applications that utilize MVVM pattern </Summary>
-    <Description>Some useful classes for WPF applications that utilize MVVM pattern </Description>
-    <ReleaseNotes>
-    </ReleaseNotes>
-    <ProjectUrl>https://github.com/iirachek/Mvvm-Extentions</ProjectUrl>
-    <LicenseUrl>https://github.com/iirachek/Mvvm-Extentions/blob/master/LICENSE</LicenseUrl>
-    <Copyright>Copyright © Illia Irachek. All rights reserved.</Copyright>
-    <Tags>wpf mvvm commands viewmodel</Tags>
+    <Summary>A collection of useful classes for desktop WPF applications that utilize MVVM pattern.  .Net 4.5</Summary>
+    <Description>The Mvvm Extensions package provides basic implementation of ICommand interface, base class implementation for ViewModels and a range of other classes that may be useful for desktop WPF application. Requires .Net 4.5</Description>
+    <ReleaseNotes></ReleaseNotes>
+    <ProjectUrl>https://github.com/iirachek/Mvvm-Extensions</ProjectUrl>
+    <LicenseUrl>https://github.com/iirachek/Mvvm-Extensions/blob/master/LICENSE</LicenseUrl>
+    <Copyright>Copyright 2019 © Illia Irachek. All rights reserved.</Copyright>
+    <Tags>wpf mvvm commands viewmodel win10 inotifypropertychanged propertychanged .net45</Tags>
   </PropertyGroup>
   <Import Project="$(NuProjPath)\NuProj.targets" />
 </Project>
