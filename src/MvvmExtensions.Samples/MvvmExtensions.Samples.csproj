@@ -54,6 +54,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="ExampleViews\CursorStateExample\CursorStateExampleView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ExampleViews\DependencyWatcherExample\DependencyWatcherExampleView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ExampleViews\PropertyChangedImplementationExample\PropertyChangedImplExampleView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindowView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -62,13 +74,24 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ExampleViews\CursorStateExample\CursorStateExampleView.xaml.cs">
+      <DependentUpon>CursorStateExampleView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ExampleViews\CursorStateExample\CursorStateExampleViewModel.cs" />
+    <Compile Include="ExampleViews\DependencyWatcherExample\DependencyWatcherExampleView.xaml.cs">
+      <DependentUpon>DependencyWatcherExampleView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ExampleViews\DependencyWatcherExample\DependencyWatcherExampleViewModel.cs" />
+    <Compile Include="ExampleViews\PropertyChangedImplementationExample\PropertyChangedImplExampleViewModel.cs" />
+    <Compile Include="ExampleViews\PropertyChangedImplementationExample\PropertyChangedImplExampleView.xaml.cs">
+      <DependentUpon>PropertyChangedImplExampleView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainWindowView.xaml.cs">
       <DependentUpon>MainWindowView.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MainWindowViewModel.cs" />
     <Compile Include="MathHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -102,5 +125,6 @@
       <Name>MvvmExtensions</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

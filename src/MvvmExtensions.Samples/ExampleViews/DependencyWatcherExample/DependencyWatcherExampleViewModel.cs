@@ -4,14 +4,14 @@ using System;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace MvvmExtensions.Samples
+namespace MvvmExtensions.Samples.ExampleViews
 {
-    public class MainWindowViewModel : INotifyPropertyChanged
+    class DependencyWatcherExampleViewModel : INotifyPropertyChanged
     {
         private int width = 0;
         private int height = 0;
 
-        public MainWindowViewModel()
+        public DependencyWatcherExampleViewModel()
         {
             DependencyWatcher.Register(this, NotifyPropertyChanged);
         }
@@ -51,7 +51,8 @@ namespace MvvmExtensions.Samples
         }
 
         // Properties marked with DependsOn attribute will automatically invoke
-        // NotifyPropertyChanged event and update values displayed in view
+        // NotifyPropertyChanged event and update values displayed in view when
+        // values of their dependencies change
         [DependsOn(nameof(Width), nameof(Height))]
         public string RectangleArea
         {

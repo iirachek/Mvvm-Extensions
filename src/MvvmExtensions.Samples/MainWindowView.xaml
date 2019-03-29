@@ -3,45 +3,21 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:MvvmExtensions.Samples"
+        xmlns:examples="clr-namespace:MvvmExtensions.Samples.ExampleViews"
         mc:Ignorable="d"
         Title="Mvvm Extensions Samples" Height="450" Width="800">
+
     <Grid>
-        <GroupBox Header="DependsOn sample" 
-                  HorizontalAlignment="Left"
-                  VerticalAlignment="Top" 
-                  Margin="20"
-                  Padding="5,10,5,5"
-                  Width="240">
-            <StackPanel>
-                <GroupBox Header="Editable fields"
-                          Padding="5">
-                    <StackPanel>
-                        <Label Content="Width" />
-                        <TextBox PreviewTextInput="TextBox_PreviewTextInput"
-                                 Text="{Binding Width, UpdateSourceTrigger=PropertyChanged}"/>
+        <ScrollViewer VerticalScrollBarVisibility="Auto"
+              HorizontalScrollBarVisibility="Auto">
+            <StackPanel Orientation="Horizontal" 
+                        Margin="0,20,0,0">
+                <examples:DependencyWatcherExampleView Margin="5"/>
 
-                        <Label Content="Height" />
-                        <TextBox PreviewTextInput="TextBox_PreviewTextInput"
-                                 Text="{Binding Height, UpdateSourceTrigger=PropertyChanged}"/>
-                    </StackPanel>
-                </GroupBox>
-                
-                <GroupBox Header="Dependency fields"
-                          Margin="0,10,0,0"
-                          Padding="5">
-                    <StackPanel>
-                        <Label Content="Area" />
-                        <TextBox IsReadOnly="True" 
-                                 Text="{Binding RectangleArea, Mode=OneWay}" />
+                <examples:PropertyChangedImplExampleView Margin="5"/>
 
-                        <Label Content="Perimeter" />
-                        <TextBox IsReadOnly="True" 
-                                 Text="{Binding RectanglePerimeter, Mode=OneWay}" />
-                    </StackPanel>
-                </GroupBox>
+                <examples:CursorStateExampleView Margin="5"/>
             </StackPanel>
-           
-        </GroupBox>
+        </ScrollViewer>
     </Grid>
 </Window>

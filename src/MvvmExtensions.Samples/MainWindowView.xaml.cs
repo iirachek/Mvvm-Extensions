@@ -9,13 +9,7 @@ namespace MvvmExtensions.Samples
     {
         public MainWindowView()
         {
-            DataContext = new MainWindowViewModel();
             InitializeComponent();
-        }
-
-        private void TextBox_PreviewTextInput(object sender, System.Windows.Input.TextCompositionEventArgs e)
-        {
-
         }
     }
 }
