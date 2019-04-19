@@ -21,9 +21,9 @@
   </PropertyGroup>
   <Import Project="$(NuProjPath)\NuProj.props" Condition="Exists('$(NuProjPath)\NuProj.props')" />
   <PropertyGroup Label="Configuration">
-    <Id>SimpleMvvmExtensions</Id>
+    <Id>Mvvm-Extensions</Id>
     <Version>1.2.1</Version>
-    <Title>Mvvm Extentions</Title>
+    <Title>Mvvm-Extensions</Title>
     <Authors>Illia Irachek</Authors>
     <Owners>Illia Irachek</Owners>
     <Summary>A collection of useful classes for desktop WPF applications that utilize MVVM pattern.  .Net 4.5</Summary>
