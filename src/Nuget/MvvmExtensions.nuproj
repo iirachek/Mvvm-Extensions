@@ -22,7 +22,7 @@
   <Import Project="$(NuProjPath)\NuProj.props" Condition="Exists('$(NuProjPath)\NuProj.props')" />
   <PropertyGroup Label="Configuration">
     <Id>Mvvm-Extensions</Id>
-    <Version>1.2.1</Version>
+    <Version>1.2.2</Version>
     <Title>Mvvm-Extensions</Title>
     <Authors>Illia Irachek</Authors>
     <Owners>Illia Irachek</Owners>
