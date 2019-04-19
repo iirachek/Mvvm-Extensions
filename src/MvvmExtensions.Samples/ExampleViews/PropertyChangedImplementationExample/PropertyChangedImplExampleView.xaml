@@ -3,10 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:ma="http://metro.mahapps.com/winfx/xaml/controls"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <GroupBox Header="DependencyWatcher sample" 
+        <GroupBox Header="PropertyChangedImplementation sample" 
                   HorizontalAlignment="Left"
                   VerticalAlignment="Top" 
                   Padding="5,10,5,5"
@@ -26,27 +27,25 @@
                         <ColumnDefinition/>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
-                    <!-- Todo: Button style -->
-                    <ToggleButton IsChecked="{Binding UseRed}" 
-                                  Width="25"
-                                  Height="25"
-                                  Background="Red"
-                                  HorizontalAlignment="Center"
-                                  VerticalAlignment="Center" />
-                    <ToggleButton Grid.Column="1"
-                                  IsChecked="{Binding UseGreen}"
-                                  Width="25"
-                                  Height="25"
-                                  Background="Green"
-                                  HorizontalAlignment="Center"
-                                  VerticalAlignment="Center"/>
-                    <ToggleButton Grid.Column="2"
-                                  IsChecked="{Binding UseBlue}"
-                                  Width="25"
-                                  Height="25"
-                                  Background="Blue"
-                                  HorizontalAlignment="Center"
-                                  VerticalAlignment="Center" />
+                    <ma:ToggleSwitch IsChecked="{Binding UseRed}"
+                                     OffLabel=""
+                                     OnLabel=""
+                                     OnSwitchBrush="Red"
+                                     OffSwitchBrush="#ff9999"/>
+
+                    <ma:ToggleSwitch Grid.Column="1"
+                                     IsChecked="{Binding UseGreen}"
+                                     OnLabel=""
+                                     OffLabel=""
+                                     OnSwitchBrush="Green"
+                                     OffSwitchBrush="#ccffcc"/>
+
+                    <ma:ToggleSwitch Grid.Column="2"
+                                     IsChecked="{Binding UseBlue}"
+                                     OnLabel=""
+                                     OffLabel=""
+                                     OnSwitchBrush="Blue"
+                                     OffSwitchBrush="#99ccff"/>
                 </Grid>
 
                 <Border Grid.Row="2"
@@ -55,8 +54,8 @@
                         Margin="10,20,10,10" 
                         Height="50"
                         Width="50"
-                        BorderBrush="Black"
-                        BorderThickness="2"
+                        BorderBrush="Gray"
+                        BorderThickness="1"
                         Background="{Binding MixedColor, Mode=OneWay}"/>
             </Grid>
         </GroupBox>
