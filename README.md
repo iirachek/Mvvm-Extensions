@@ -1,8 +1,15 @@
 # Mvvm-Extensions
-<img src="https://img.shields.io/github/license/iirachek/Mvvm-Extensions.svg?style=flat-square" /> <img src="https://img.shields.io/nuget/v/Mvvm-Extensions.svg?style=flat-square" />
+[![License](https://img.shields.io/github/license/iirachek/Mvvm-Extensions.svg?style=flat-square)](https://github.com/iirachek/Mvvm-Extensions/blob/master/LICENSE)
+[![NuGet](https://img.shields.io/nuget/v/Mvvm-Extensions.svg?style=flat-square)](https://www.nuget.org/packages/Mvvm-Extensions)
 
+<br/>
 
 The `Mvvm-Extensions` library provides base implementations of classes, required for WPF application which intends to utilize MVVM pattern. Additionaly, the library provides a few solutions to common problems that arise during GUI development.
+
+#### NuGet Package
+```
+PM>  Install-Package Mvvm-Extensions -Version 1.2.2
+```
 
 # Features
 - [INotifyPropertyChanged base implementation](https://github.com/iirachek/Mvvm-Extensions#inotifypropertychanged-base-implementation)
@@ -24,7 +31,7 @@ This library provides a few mechanisms that allow to greatly simplify the initia
 
 Classes, that inherit `PropertyChangedImplementation` can invoke `PropertyChanged` event by calling `NotifyPropertyChanged()` method in their property setters. Name of the invoking property is pulled automatically.
 
-##### Example
+#### Example
 ```
     class RectangleViewModel : PropertyChangedImplementation
     {
@@ -94,7 +101,7 @@ The resulting behavior of properties marked by `DependsOn` attribute is the same
 `DelegateCommand` provides the most basic implementation of `ICommand` interface that can be used immediatelly to invoke viewmodel commands from the views.
 
 #### Sample usage
-##### DataContext
+#### DataContext
 ```
         private bool runningAutomaticOp = false;
 
@@ -132,7 +139,7 @@ The resulting behavior of properties marked by `DependsOn` attribute is the same
             // Logic
         }
 ```
-##### View
+#### View
 ```
 <Button Command="{Binding RunAutomaticOperationCommand}" />
 ```
@@ -157,14 +164,14 @@ The library contains a number of converters that are nessessary for any decently
 #### BooleanToVisibilityConverter
 Converts `bool` value to `System.Windows.Visibility`
 
-##### Convert
+#### Convert
 
 | Input value | Converted value  |
 | ------------ | ------------ |
 | true | Visibility.Visible |
 | false | Visibility.Collapsed |
 
-##### ConvertBack
+#### ConvertBack
 
 | Input value | Converted value  |
 | ------------ | ------------ |
@@ -176,14 +183,14 @@ Converts `bool` value to `System.Windows.Visibility`
 #### BooleanToVisibilityHiddenConverter
 Same as `BooleanToVisibilityConverter`, except `false` evaluates to `Visibility.Hidden` instead of `Visibility.Collapsed`
 
-##### Convert
+#### Convert
 
 | Input value | Converted value  |
 | ------------ | ------------ |
 | true | Visibility.Visible |
 | false | Visibility.Hidden |
 
-##### ConvertBack
+#### ConvertBack
 
 | Input value | Converted value  |
 | ------------ | ------------ |
@@ -199,14 +206,14 @@ Inverts value of the passed `bool` value
 #### InvertBooleanToVisibilityConverter
 Converts `bool` value to `System.Windows.Visibility`
 
-##### Convert
+#### Convert
 
 | Input value | Converted value  |
 | ------------ | ------------ |
 | true | Visibility.Collapsed |
 | false | Visibility.Visible |
 
-##### ConvertBack
+#### ConvertBack
 
 | Input value | Converted value  |
 | ------------ | ------------ |
@@ -218,10 +225,10 @@ Converts `bool` value to `System.Windows.Visibility`
 #### MultiBoolAndConverter
 Multi-value converter that accepts multiple `bool` values.
 
-##### Convert
+#### Convert
 Returns `true` if every passed value is `true`. Otherwise returns `false`.
 
-##### ConvertBack
+#### ConvertBack
 Not implemented
 
 ------------
@@ -229,10 +236,10 @@ Not implemented
 #### MultiBoolOrConverter
 Multi-value converter that accepts multiple `bool` values.
 
-##### Convert
+#### Convert
 Returns `true` is at least one passed value is `true`. Otherwise returns `false`.
 
-##### ConvertBack
+#### ConvertBack
 Not implemented
 
 ------------
@@ -240,10 +247,10 @@ Not implemented
 #### NullToVisibilityConverter
 Converts any object to `System.Windows.Visibility`
 
-##### Convert
+#### Convert
 If passed value is `null`, returns `Visibility.Collapsed`. Otherwise returns `Visibility.Visible`.
 
-##### ConvertBack
+#### ConvertBack
 Not implemented
 
 # License
