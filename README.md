@@ -1,11 +1,21 @@
 # Mvvm-Extensions
+<img src="https://img.shields.io/github/license/iirachek/Mvvm-Extensions.svg?style=flat-square" /> <img src="https://img.shields.io/nuget/v/Mvvm-Extensions.svg?style=flat-square" />
+
+
 The `Mvvm-Extensions` library provides base implementations of classes, required for WPF application which intends to utilize MVVM pattern. Additionaly, the library provides a few solutions to common problems that arise during GUI development.
 
 # Features
-- feature 1
-- feature 2
-- feature 3
-- feature 4
+- [INotifyPropertyChanged base implementation](https://github.com/iirachek/Mvvm-Extensions#inotifypropertychanged-base-implementation)
+
+- [DependsOn attribute](https://github.com/iirachek/Mvvm-Extensions#dependson-attribute)
+
+- [DependencyWatcher](https://github.com/iirachek/Mvvm-Extensions#dependencywatcher)
+
+- [DelegateCommand](https://github.com/iirachek/Mvvm-Extensions#delegatecommand)
+
+- [CursorState](https://github.com/iirachek/Mvvm-Extensions#cursorstate)
+
+- [Converters](https://github.com/iirachek/Mvvm-Extensions#converters)
 
 ## INotifyPropertyChanged base implementation 
 This library provides a few mechanisms that allow to greatly simplify the initial development of WPF application that utilizes MVVM pattern. 
@@ -16,11 +26,11 @@ Classes, that inherit `PropertyChangedImplementation` can invoke `PropertyChange
 
 ##### Example
 ```
-	class RectangleViewModel : PropertyChangedImplementation
+    class RectangleViewModel : PropertyChangedImplementation
     {
-		int width = 0;
-		int height = 0;
-		
+        int width = 0;
+        int height = 0;
+
         public int Width
         {
             get
@@ -71,14 +81,14 @@ This attribute allows to automatically invoke `PropertyChanged` event for proper
 
 [Sample](https://github.com/iirachek/Mvvm-Extensions/blob/master/src/MvvmExtensions.Samples/ExampleViews/PropertyChangedImplementationExample/PropertyChangedImplExampleViewModel.cs "Sample")
 
-![DependsOn sample](https://github.com/iirachek/Mvvm-Extensions/tree/master/docs/DependsOnSample.gif)
+![GIF sample](https://github.com/iirachek/Mvvm-Extensions/tree/master/docs/DependsOnSample.gif)
 
 ## DependencyWatcher
 `DependencyWatcher` is an alternative class that allows to use the `DependsOn` attribute when its impossible or not desirable to inherit `PropertyChangedImplementation` by the viewmodel. The viewmodel must implement INotifyPropertyChanged and provide `DependencyWatcher` with a method for `PropertyChanged` event invokation.
 
 The resulting behavior of properties marked by `DependsOn` attribute is the same between both methods.
 
-![DependencyWatcher sample](https://github.com/iirachek/Mvvm-Extensions/tree/master/docs/DependencyWatcherSample.gif)
+![GIF sample](https://github.com/iirachek/Mvvm-Extensions/tree/master/docs/DependencyWatcherSample.gif)
 
 ## DelegateCommand
 `DelegateCommand` provides the most basic implementation of `ICommand` interface that can be used immediatelly to invoke viewmodel commands from the views.
@@ -86,9 +96,9 @@ The resulting behavior of properties marked by `DependsOn` attribute is the same
 #### Sample usage
 ##### DataContext
 ```
-		private bool runningAutomaticOp = false;
-		
-		public bool RunningAutomaticOp
+        private bool runningAutomaticOp = false;
+
+        public bool RunningAutomaticOp
         {
             get
             {
@@ -103,7 +113,7 @@ The resulting behavior of properties marked by `DependsOn` attribute is the same
                 }
             }
         }
-		
+
         [DependsOn(nameof(RunningAutomaticOp))]
         public ICommand RunAutomaticOperationCommand
         {
@@ -116,11 +126,11 @@ The resulting behavior of properties marked by `DependsOn` attribute is the same
                 };
             }
         }
-		
-		private void RunAutomaticOp() 
-		{
-			// Logic
-		}
+
+        private void RunAutomaticOp() 
+        {
+            // Logic
+        }
 ```
 ##### View
 ```
@@ -133,13 +143,13 @@ The resulting behavior of properties marked by `DependsOn` attribute is the same
 #### Sample usage
 The following code is used to create behavior visible on the image above:
 ```
-	Application.Current.Dispatcher.Invoke(async () =>
-	{
-		using (new CursorState(Cursors.Wait))
-		{
-			await Task.Delay(2000);
-		}
-	});
+    Application.Current.Dispatcher.Invoke(async () =>
+    {
+        using (new CursorState(Cursors.Wait))
+        {
+            await Task.Delay(2000);
+        }
+    });
 ```
 ## Converters
 The library contains a number of converters that are nessessary for any decently complex UI.  The available converters and their values are shown below:
