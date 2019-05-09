@@ -32,7 +32,7 @@ This library provides a few mechanisms that allow to greatly simplify the initia
 Classes, that inherit `PropertyChangedImplementation` can invoke `PropertyChanged` event by calling `NotifyPropertyChanged()` method in their property setters. Name of the invoking property is pulled automatically.
 
 #### Example
-```
+```CSharp
     class RectangleViewModel : PropertyChangedImplementation
     {
         int width = 0;
@@ -102,7 +102,7 @@ The resulting behavior of properties marked by `DependsOn` attribute is the same
 
 #### Sample usage
 #### DataContext
-```
+```CSharp
         private bool runningAutomaticOp = false;
 
         public bool RunningAutomaticOp
