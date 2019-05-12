@@ -77,13 +77,11 @@
     <Compile Include="Commands\DelegateCommand.cs" />
     <Compile Include="Attributes\DependsOnAttribute.cs" />
     <Compile Include="Converters\BooleanToVisibilityConverter.cs" />
-    <Compile Include="Converters\BooleanToVisibilityHiddenConverter.cs" />
     <Compile Include="Converters\InvertBooleanConverter.cs" />
     <Compile Include="Converters\InvertBooleanToVisibilityConverter.cs" />
     <Compile Include="Converters\MultiBoolAndConverter.cs" />
     <Compile Include="Converters\MultiBoolOrConverter.cs" />
     <Compile Include="Converters\NullToVisibilityConverter.cs" />
-    <Compile Include="Converters\TextToUpperCaseConverter.cs" />
     <Compile Include="CursorState.cs" />
     <Compile Include="PropertyChangedMonitoring\DependencyHelper.cs" />
     <Compile Include="PropertyChangedMonitoring\DependencyWatcher.cs" />

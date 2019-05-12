@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvmExtensions.Samples", "M
 EndProject
 Project("{FF286327-C783-4F7A-AB73-9BCBAD0D4460}") = "MvvmExtensions", "Nuget\MvvmExtensions.nuproj", "{5B6BFB9A-138E-4782-AF31-584B7745B1C4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvmExtensions.Tests", "MvvmExtensions.Tests\MvvmExtensions.Tests.csproj", "{AB897916-8E13-4F8D-A394-E862A4AB84F3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,14 @@ Global
 		{5B6BFB9A-138E-4782-AF31-584B7745B1C4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5B6BFB9A-138E-4782-AF31-584B7745B1C4}.Release|x64.ActiveCfg = Release|Any CPU
 		{5B6BFB9A-138E-4782-AF31-584B7745B1C4}.Release|x64.Build.0 = Release|Any CPU
+		{AB897916-8E13-4F8D-A394-E862A4AB84F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB897916-8E13-4F8D-A394-E862A4AB84F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB897916-8E13-4F8D-A394-E862A4AB84F3}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{AB897916-8E13-4F8D-A394-E862A4AB84F3}.Debug|x64.Build.0 = Debug|Any CPU
+		{AB897916-8E13-4F8D-A394-E862A4AB84F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB897916-8E13-4F8D-A394-E862A4AB84F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB897916-8E13-4F8D-A394-E862A4AB84F3}.Release|x64.ActiveCfg = Release|Any CPU
+		{AB897916-8E13-4F8D-A394-E862A4AB84F3}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
