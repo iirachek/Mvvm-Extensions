@@ -85,13 +85,8 @@
     <Compile Include="Converters\NullToVisibilityConverter.cs" />
     <Compile Include="Converters\TextToUpperCaseConverter.cs" />
     <Compile Include="CursorState.cs" />
-    <Compile Include="EventAggregator\EventAggregator.cs" />
-    <Compile Include="EventAggregator\IEventAggregator.cs" />
-    <Compile Include="EventAggregator\IEventSubscriber.cs" />
-    <Compile Include="EventAggregator\TokenSubscriber.cs" />
     <Compile Include="PropertyChangedMonitoring\DependencyHelper.cs" />
     <Compile Include="PropertyChangedMonitoring\DependencyWatcher.cs" />
-    <Compile Include="MutexHelper\SingletonMutexHelper.cs" />
     <Compile Include="PropertyChangedMonitoring\PropertyChangedImplementation.cs" />
     <Compile Include="Properties\Version.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
