@@ -8,7 +8,7 @@ The `Mvvm-Extensions` library provides base implementations of classes, required
 
 #### NuGet Package
 ```
-PM>  Install-Package Mvvm-Extensions -Version 1.2.2
+PM>  Install-Package Mvvm-Extensions -Version 1.3.0
 ```
 
 # Features
@@ -165,37 +165,13 @@ The library contains a number of converters that are nessessary for any decently
 Converts `bool` value to `System.Windows.Visibility`
 
 #### Convert
+`true` converts to `Visibility.Visible`
 
-| Input value | Converted value  |
-| ------------ | ------------ |
-| true | Visibility.Visible |
-| false | Visibility.Collapsed |
+`false` converts to converter parameter (default is `Visibility.Collapsed`)
 
 #### ConvertBack
+Value equal to `Visibility.Visible` converts to `true`, otherwise to `false`
 
-| Input value | Converted value  |
-| ------------ | ------------ |
-| Visibility.Visible | true |
-| Visibility.Hidden<br/>Visibility.Collapsed | false |
-
-------------
-
-#### BooleanToVisibilityHiddenConverter
-Same as `BooleanToVisibilityConverter`, except `false` evaluates to `Visibility.Hidden` instead of `Visibility.Collapsed`
-
-#### Convert
-
-| Input value | Converted value  |
-| ------------ | ------------ |
-| true | Visibility.Visible |
-| false | Visibility.Hidden |
-
-#### ConvertBack
-
-| Input value | Converted value  |
-| ------------ | ------------ |
-| Visibility.Visible | true |
-| Visibility.Hidden<br/>Visibility.Collapsed  | false |
 ------------
 
 #### InvertBooleanConverter
@@ -207,18 +183,14 @@ Inverts value of the passed `bool` value
 Converts `bool` value to `System.Windows.Visibility`
 
 #### Convert
+`true` converts to converter parameter (default is `Visibility.Collapsed`)
 
-| Input value | Converted value  |
-| ------------ | ------------ |
-| true | Visibility.Collapsed |
-| false | Visibility.Visible |
+`false` converts to `Visibility.Visible`
+
 
 #### ConvertBack
+Value equal to `Visibility.Visible` converts to `false`, otherwise to `true`
 
-| Input value | Converted value  |
-| ------------ | ------------ |
-| Visibility.Visible | false |
-| Visibility.Hidden<br/>Visibility.Collapsed  | true |
 
 ------------
 
@@ -248,7 +220,9 @@ Not implemented
 Converts any object to `System.Windows.Visibility`
 
 #### Convert
-If passed value is `null`, returns `Visibility.Collapsed`. Otherwise returns `Visibility.Visible`.
+Any not null value converts to `Visibility.Visible`
+
+`null` converts to converter parameter (default is `Visibility.Collapsed`)
 
 #### ConvertBack
 Not implemented
