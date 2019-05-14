@@ -86,7 +86,6 @@
     <Compile Include="PropertyChangedMonitoring\DependencyHelper.cs" />
     <Compile Include="PropertyChangedMonitoring\DependencyWatcher.cs" />
     <Compile Include="PropertyChangedMonitoring\PropertyChangedImplementation.cs" />
-    <Compile Include="Properties\Version.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

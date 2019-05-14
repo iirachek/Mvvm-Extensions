@@ -1,0 +1,1 @@
+nuget pack MvvmExtensions.csproj -Prop Configuration=Release

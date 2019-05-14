@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Mvvm-Extensions</id>
+    <version>$version$</version>
+    <title>Mvvm-Extensions</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/iirachek/Mvvm-Extensions</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>Removed unrelated classes and improved converters.</releaseNotes>
+    <copyright>Copyright 2019 © Illia Irachek. All rights reserved.</copyright>
+    <tags>wpf mvvm commands viewmodel win10 inotifypropertychanged propertychanged .net45</tags>
+  </metadata>
+</package>
