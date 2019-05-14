@@ -16,8 +16,6 @@ namespace MvvmExtensions.Converters
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            var convertedParameter = parameter != null ? (Visibility)parameter : Visibility.Collapsed;
-
             return ((Visibility)value == Visibility.Visible) ? true : false;
         }
     }
