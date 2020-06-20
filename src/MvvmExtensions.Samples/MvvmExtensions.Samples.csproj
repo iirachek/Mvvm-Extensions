@@ -63,6 +63,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="ExampleViews\ConvertersExample\ConvertersExampleView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ExampleViews\CursorStateExample\CursorStateExampleView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -83,6 +87,10 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ExampleViews\ConvertersExample\ConvertersExampleView.xaml.cs">
+      <DependentUpon>ConvertersExampleView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ExampleViews\ConvertersExample\ConvertersExampleViewModel.cs" />
     <Compile Include="ExampleViews\CursorStateExample\CursorStateExampleView.xaml.cs">
       <DependentUpon>CursorStateExampleView.xaml</DependentUpon>
     </Compile>

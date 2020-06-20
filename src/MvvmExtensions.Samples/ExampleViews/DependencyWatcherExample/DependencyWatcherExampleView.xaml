@@ -5,15 +5,16 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <Style x:Key="InnerGroupBoxStyle" TargetType="{x:Type GroupBox}" BasedOn="{StaticResource {x:Type GroupBox}}">
+            <Setter Property="Padding" Value="5" />
+        </Style>
+    </UserControl.Resources>
+    
     <Grid>
-        <GroupBox Header="DependencyWatcher sample" 
-                  HorizontalAlignment="Left"
-                  VerticalAlignment="Top" 
-                  Padding="5,10,5,5"
-                  Width="240">
+        <GroupBox Style="{StaticResource ExampleGroupBoxStyle}" Header="DependencyWatcher sample">
             <StackPanel>
-                <GroupBox Header="Editable fields"
-                          Padding="5">
+                <GroupBox Style="{StaticResource InnerGroupBoxStyle}" Header="Editable fields">
                     <StackPanel>
                         <Label Content="Width" />
                         <TextBox Text="{Binding Width, UpdateSourceTrigger=PropertyChanged}"/>
@@ -23,9 +24,10 @@
                     </StackPanel>
                 </GroupBox>
 
-                <GroupBox Header="Dependency fields"
-                          Margin="0,10,0,0"
-                          Padding="5">
+                <GroupBox 
+                    Style="{StaticResource InnerGroupBoxStyle}" 
+                    Header="Dependency fields"
+                    Margin="0,10,0,0">
                     <StackPanel>
                         <Label Content="Area" />
                         <TextBox IsReadOnly="True" 
