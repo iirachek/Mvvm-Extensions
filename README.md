@@ -160,72 +160,66 @@ The following code is used to create behavior visible on the image above:
 ```
 ## Converters
 The library contains a number of converters that are nessessary for any decently complex UI.  The available converters and their values are shown below:
+- [BooleanToVisibilityConverter](https://github.com/iirachek/Mvvm-Extensions/#booleantovisibilityconverter)
+- [InvertBooleanConverter](https://github.com/iirachek/Mvvm-Extensions/#invertbooleanconverter)
+- [InvertBooleanToVisibilityConverter](https://github.com/iirachek/Mvvm-Extensions/#invertbooleantovisibilityconverter)
+- [InvertValueToVisibilityConverter](https://github.com/iirachek/Mvvm-Extensions/#invertvaluetovisibilityconverter)
+- [MultiBoolAndConverter](https://github.com/iirachek/Mvvm-Extensions/#multiboolandconverter)
+- [MultiBoolOrConverter](https://github.com/iirachek/Mvvm-Extensions/#multiboolorconverter)
+- [ValueToVisibilityConverter](https://github.com/iirachek/Mvvm-Extensions/#valuetovisibilityconverter)
 
-#### BooleanToVisibilityConverter
-Converts `bool` value to `System.Windows.Visibility`
+### BooleanToVisibilityConverter
+Converts `bool` to `System.Windows.Visibility`
 
-#### Convert
+
 `true` converts to `Visibility.Visible`
 
 `false` converts to converter parameter (default is `Visibility.Collapsed`)
 
-#### ConvertBack
-Value equal to `Visibility.Visible` converts to `true`, otherwise to `false`
+------------
+
+### InvertBooleanConverter
+Inverts `bool` value
 
 ------------
 
-#### InvertBooleanConverter
-Inverts value of the passed `bool` value
+### InvertBooleanToVisibilityConverter
+Converts `bool` to `System.Windows.Visibility`
 
-------------
 
-#### InvertBooleanToVisibilityConverter
-Converts `bool` value to `System.Windows.Visibility`
-
-#### Convert
 `true` converts to converter parameter (default is `Visibility.Collapsed`)
 
 `false` converts to `Visibility.Visible`
 
+------------
 
-#### ConvertBack
-Value equal to `Visibility.Visible` converts to `false`, otherwise to `true`
+### InvertValueToVisibilityConverter
+Converts `object` to `System.Windows.Visibility`
 
+
+`null` converts to `Visibility.Visible`
+
+Any object converts to converter parameter (default is `Visibility.Collapsed`)
 
 ------------
 
-#### MultiBoolAndConverter
-Multi-value converter that accepts multiple `bool` values.
-
-#### Convert
-Returns `true` if every passed value is `true`. Otherwise returns `false`.
-
-#### ConvertBack
-Not implemented
+### MultiBoolAndConverter
+Converts `bool[]` to single `bool` value by performing logican AND operation on each member
 
 ------------
 
-#### MultiBoolOrConverter
-Multi-value converter that accepts multiple `bool` values.
-
-#### Convert
-Returns `true` is at least one passed value is `true`. Otherwise returns `false`.
-
-#### ConvertBack
-Not implemented
+### MultiBoolOrConverter
+Converts `bool[]` to single `bool` value by performing logican OR operation on each member
 
 ------------
 
-#### NullToVisibilityConverter
-Converts any object to `System.Windows.Visibility`
+### ValueToVisibilityConverter
+Converts `object` to `System.Windows.Visibility`
 
-#### Convert
-Any not null value converts to `Visibility.Visible`
+
+Any object converts to `Visibility.Visible`
 
 `null` converts to converter parameter (default is `Visibility.Collapsed`)
-
-#### ConvertBack
-Not implemented
 
 # License
 [MIT LIcense (MIT)](https://github.com/iirachek/Mvvm-Extensions/blob/master/LICENSE "MIT LIcense (MIT)")
