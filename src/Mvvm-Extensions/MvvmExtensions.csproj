@@ -79,9 +79,10 @@
     <Compile Include="Converters\BooleanToVisibilityConverter.cs" />
     <Compile Include="Converters\InvertBooleanConverter.cs" />
     <Compile Include="Converters\InvertBooleanToVisibilityConverter.cs" />
+    <Compile Include="Converters\InvertValueToVisibilityConverter.cs" />
     <Compile Include="Converters\MultiBoolAndConverter.cs" />
     <Compile Include="Converters\MultiBoolOrConverter.cs" />
-    <Compile Include="Converters\NullToVisibilityConverter.cs" />
+    <Compile Include="Converters\ValueToVisibilityConverter.cs" />
     <Compile Include="CursorState.cs" />
     <Compile Include="PropertyChangedMonitoring\DependencyHelper.cs" />
     <Compile Include="PropertyChangedMonitoring\DependencyWatcher.cs" />

@@ -5,6 +5,12 @@ using System.Windows.Data;
 
 namespace MvvmExtensions.Converters
 {
+    /// <summary>
+    /// Converts <see cref="bool"/> to <see cref="Visibility"/>
+    /// <br></br>
+    /// <br>True converts to <see cref="Visibility.Visible"/></br> 
+    /// <br>False converts to converter parameter (default is <see cref="Visibility.Collapsed"/>)</br>
+    /// </summary>
     public class BooleanToVisibilityConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)

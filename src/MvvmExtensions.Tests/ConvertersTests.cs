@@ -70,9 +70,22 @@ namespace MvvmExtensions.Tests
         [TestCase(1, Visibility.Visible)]
         [TestCase(1, Visibility.Visible, Visibility.Collapsed)]
         [TestCase(1, Visibility.Visible, Visibility.Hidden)]
-        public void NullToVisibilityConverter_OneWayConvert_Success(object input, Visibility expectedValue, object parameter = null)
+        public void ValueToVisibilityConverter_OneWayConvert_Success(object input, Visibility expectedValue, object parameter = null)
         {
-            var converter = new NullToVisibilityConverter();
+            var converter = new ValueToVisibilityConverter();
+            PerformOneWayConverterTest(converter, input, expectedValue, parameter);
+        }
+
+        [Test]
+        [TestCase(1, Visibility.Collapsed)]
+        [TestCase(1, Visibility.Collapsed, Visibility.Collapsed)]
+        [TestCase(1, Visibility.Hidden, Visibility.Hidden)]
+        [TestCase(null, Visibility.Visible)]
+        [TestCase(null, Visibility.Visible, Visibility.Collapsed)]
+        [TestCase(null, Visibility.Visible, Visibility.Hidden)]
+        public void InvertValueToVisibilityConverter_OneWayConvert_Success(object input, Visibility expectedValue, object parameter = null)
+        {
+            var converter = new InvertValueToVisibilityConverter();
             PerformOneWayConverterTest(converter, input, expectedValue, parameter);
         }
 
