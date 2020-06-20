@@ -1,6 +1,7 @@
 ﻿using MvvmExtensions.Attributes;
 using MvvmExtensions.Commands;
 using MvvmExtensions.PropertyChangedMonitoring;
+using MvvmExtensions.Utilities;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;

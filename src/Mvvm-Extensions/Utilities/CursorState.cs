@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Input;
 
-namespace MvvmExtensions
+namespace MvvmExtensions.Utilities
 {
     /// <summary>
     /// Changes cursor state for current application. Cursor automatically resets back to default when instance of this class is disposed
