@@ -159,7 +159,7 @@ The following code is used to create behavior visible on the image above:
     });
 ```
 ## Converters
-The library contains a number of converters that are nessessary for any decently complex UI.  The available converters and their values are shown below:
+The library contains a number of converters that may be useful for complex UI implementations. The available converters are shown below:
 - [BooleanToVisibilityConverter](https://github.com/iirachek/Mvvm-Extensions#booleantovisibilityconverter)
 - [InvertBooleanConverter](https://github.com/iirachek/Mvvm-Extensions#invertbooleanconverter)
 - [InvertBooleanToVisibilityConverter](https://github.com/iirachek/Mvvm-Extensions#invertbooleantovisibilityconverter)
