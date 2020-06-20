@@ -12,50 +12,20 @@ namespace MvvmExtensions.Samples.ExampleViews
 
         public bool UseRed
         {
-            get
-            {
-                return useRed;
-            }
-            set
-            {
-                if (useRed != value)
-                {
-                    useRed = value;
-                    NotifyPropertyChanged();
-                }
-            }
+            get { return useRed; }
+            set { Set(ref useRed, value); }
         }
 
         public bool UseGreen
         {
-            get
-            {
-                return useGreen;
-            }
-            set
-            {
-                if (useGreen != value)
-                {
-                    useGreen = value;
-                    NotifyPropertyChanged();
-                }
-            }
+            get { return useGreen; }
+            set { Set(ref useGreen, value); }
         }
 
         public bool UseBlue
         {
-            get
-            {
-                return useBlue;
-            }
-            set
-            {
-                if (useBlue != value)
-                {
-                    useBlue = value;
-                    NotifyPropertyChanged();
-                }
-            }
+            get { return useBlue; }
+            set { Set(ref useBlue, value);  }
         }
 
         [DependsOn(nameof(UseRed), nameof(UseGreen), nameof(UseBlue))]

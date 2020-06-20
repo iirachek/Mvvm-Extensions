@@ -7,18 +7,8 @@ namespace MvvmExtensions.Samples.ExampleViews
         bool _boolSwitch = true;
         public bool BoolSwitch
         {
-            get
-            {
-                return _boolSwitch;
-            }
-            set
-            {
-                if (_boolSwitch != value)
-                {
-                    _boolSwitch = value;
-                    NotifyPropertyChanged();
-                }
-            }
+            get { return _boolSwitch; }
+            set { Set(ref _boolSwitch, value); }
         }
     }
 }

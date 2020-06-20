@@ -55,34 +55,14 @@ namespace MvvmExtensions.Samples.ExampleViews
 
         public bool RunningAutomaticOp
         {
-            get
-            {
-                return runningAutomaticOp;
-            }
-            set
-            {
-                if (runningAutomaticOp != value)
-                {
-                    runningAutomaticOp = value;
-                    NotifyPropertyChanged();
-                }
-            }
+            get { return runningAutomaticOp; }
+            set { Set(ref runningAutomaticOp, value); }
         }
 
         public bool RunningManualOp
         {
-            get
-            {
-                return runningManualOp;
-            }
-            set
-            {
-                if (runningManualOp != value)
-                {
-                    runningManualOp = value;
-                    NotifyPropertyChanged();
-                }
-            }
+            get { return runningManualOp; }
+            set { Set(ref runningManualOp, value); }
         }
 
         private void RunAutomaticOp()
