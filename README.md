@@ -8,7 +8,7 @@ The `Mvvm-Extensions` library provides base implementations of classes, required
 
 #### NuGet Package
 ```
-PM>  Install-Package Mvvm-Extensions -Version 1.3.0
+PM>  Install-Package Mvvm-Extensions -Version 1.4.0
 ```
 
 # Features
